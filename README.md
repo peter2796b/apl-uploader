@@ -16,9 +16,9 @@ This is a mono repo with Laravel project in the API directory and react project 
 ## Getting started
 - Clone the repo
 - `cd API && composer install`
+- `cp .env.example .env`
 - `php aritsan key:generate`
 - `php artisan migrate`
-- `cp .env.example .env`
 - Copy over the Azure credentials in the .env
 - `php artisan storage:link`
 - `php artisan serve` this will start the api server at `http://localhost:8000
@@ -60,3 +60,10 @@ testable by using `FileService` and DI into the controller.
 
 
 `FileService` can be unit tested by mocking the `Storage` Facade and test the `upload` method
+
+#### Pre-processors
+We can implement the `PreProcessorInterface` to implement pre-processors for other types of file.
+
+The `process` method drives the processing that that needs to be called.
+
+By default we call all the functions, and individual function decide based on the configuration if we need to perform the action.
