@@ -3,6 +3,9 @@
 
 Laravel/React file uploader to Azure blob storage
 
+Demo Link: `https://github.com/peter2796b/apl-uploader/blob/master/apl-uploader-demo.gif`
+
+
 ![](https://raw.githubusercontent.com/peter2796b/apl-uploader/refs/heads/master/apl-uploader-demo.gif?token=GHSAT0AAAAAACXL7JASYG7WHQYS7WJPI726ZYL5W5A)
 
 
